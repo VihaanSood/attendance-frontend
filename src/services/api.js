@@ -2,7 +2,7 @@
 
 // In development, Vite proxy forwards /api → localhost:5000
 // In production (Vercel), VITE_API_URL must be set to your backend URL
-const BASE = import.meta.env.VITE_API_URL || 'localhost:5000/api'
+const BASE = import.meta.env.VITE_API_URL || 'localhost:5000/api/v1'
 
 // ── Token management ─────────────────────────────────────────────
 export const getToken = () => localStorage.getItem('access_token')
